@@ -27,7 +27,7 @@ class Questions extends React.Component{
   render () {
     return (
       <div id="">
-        <QuestionContainer questionState={this.state} upDateQuestion= {this.upDateQuestion}/>
+        <QuestionContainer questionState={this.state} upDateQuestion= {this.upDateQuestion} />
       </div>
     );
   }
