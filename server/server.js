@@ -28,6 +28,7 @@ io.on('connection', function(socket){
   socket.on('Response', function(data) {
   	//Send data to presenter
   	socket.emit('responseDate', data);
+
   })
 
   socket.on('disconnect', function(){
