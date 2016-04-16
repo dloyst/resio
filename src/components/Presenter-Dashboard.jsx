@@ -7,7 +7,7 @@ const socket = io();
 
 class Dashboard extends React.Component{
 
-constructor(props) {
+  constructor(props) {
   super(props);
     this.state = {
         'Carlos.MyPoll.0.0': 0,
@@ -35,7 +35,7 @@ constructor(props) {
       var answerIncrease = {data: self.state[data]++};
       self.setState(answerIncrease);
     });
-}
+  }
 
   render () {
     console.log(this.state);
