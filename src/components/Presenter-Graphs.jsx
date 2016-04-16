@@ -11,9 +11,9 @@ class Graphs extends React.Component{
   render () {
   	var q1 = [
 		  {label: 'Votes', values: [
-		  {x: 'Daniel', y: this.props.viewerResponse['Carlos.MyPoll.0.0']}, 
-		  {x: 'Dave', y: this.props.viewerResponse['Carlos.MyPoll.0.1']}, 
-		  {x: 'Alex', y: this.props.viewerResponse['Carlos.MyPoll.0.2']}, 
+		  {x: 'Daniel', y: this.props.viewerResponse['Carlos.MyPoll.0.0']},
+		  {x: 'Dave', y: this.props.viewerResponse['Carlos.MyPoll.0.1']},
+		  {x: 'Alex', y: this.props.viewerResponse['Carlos.MyPoll.0.2']},
 		  {x: 'Carlos', y: this.props.viewerResponse['Carlos.MyPoll.0.3']}]}
 		  ];
 
@@ -49,7 +49,6 @@ class Graphs extends React.Component{
 	    innerRadius={20}
 	    sectorBorderColor="white"
 	    title="Pie Chart"
-	  />
       </div>
     );
   }
