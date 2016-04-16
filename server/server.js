@@ -18,8 +18,9 @@ app.get('/client/bundle.js', function (req, res) {
 
 io.on('connection', function(socket){
 
-  socket.on('Response', function(data) {
-  	//eventually write data to dB
+  socket.on('viewerAnswer', function(data) {
+  	console.log('Server Response: ' + data);
+  	io.emit('serverResponse', data);
   });
 
 });
