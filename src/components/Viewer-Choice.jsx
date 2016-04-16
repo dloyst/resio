@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 const socket = io();
 
-class Choice extends React.Component{
+class Choice extends React.Component {
 
   submitAnswer(qIdentifier, choice) {
 

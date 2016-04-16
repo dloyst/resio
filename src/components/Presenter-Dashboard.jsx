@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Graphs from './Presenter-Graphs.jsx';
 const socket = io();
 
@@ -62,9 +61,7 @@ class Dashboard extends React.Component {
                    ]
         }
       ]
-
    };
-
 
     var self = this;
     socket.on('serverResponse', function(data) {
@@ -75,8 +72,8 @@ class Dashboard extends React.Component {
     });
   }
 
-
   render () {
+
     return (
       <div>
       <h5>Showing Responses</h5>
