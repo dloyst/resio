@@ -40,7 +40,7 @@ io.on('connection', socket => {
 });
 
 app.get('/api/questions', (req, res) => {
- res.json(database);
+  res.json(database);
 });
 
 //data is hard coded into the server for now
@@ -53,30 +53,30 @@ app.get('/api/questions', (req, res) => {
 //'qType' is used to determine whether the thumb graphic is used in Viewer-Choices.jsx
 //both Presenter-Dashboard.jsx and Viewer-QuestionApp.jsx make an ajax request to grab this data
 var database = {
- questions:
- [
-   { cType: 'bar',
-     question: 'Who has the coolest scratch project?',
-     choices: [{ Alex: 0, Daniel: 0, Dave: 0, Carlos: 0 }],
-     qType: 'multiple'
-   },
-   { cType: 'pie',
-     question: 'What is your favorite beer?',
-     choices: [{ 'Stone IPA': 0, 'Corona Light': 0, 'Guiness': 0, 'Sierra Nevada': 0, 'Blue Moon': 0, "I don't drink beer, I drink bourbon": 0}],
-     qType: 'multiple'
-   },
-   {
-     cType: 'bar',
-     question: 'What was your favorite company that came to hiring day?',
-     choices: [{ 'Dog Vacay': 0, 'Dollar Shave Club': 0, 'LA Body Points': 0, Whisper: 0, Procore: 0, ESPN: 0, Ticketmaster: 0 }],
-     qType: 'multiple'
-   },
-   { cType: 'pie',
-     question: 'Thumbs Up or Thumbs Down on drinks last Thursday?',
-     choices: [{ Up: 0, Down: 0 }],
-     qType: 'thumbs'
-   }
- ]
+  questions:
+  [
+    { cType: 'bar',
+      question: 'Who has the coolest scratch project?',
+      choices: [{ Alex: 0, Daniel: 0, Dave: 0, Carlos: 0 }],
+      qType: 'multiple'
+    },
+    { cType: 'pie',
+      question: 'What is your favorite beer?',
+      choices: [{ 'Stone IPA': 0, 'Corona Light': 0, 'Guiness': 0, 'Sierra Nevada': 0, 'Blue Moon': 0, "I don't drink beer, I drink bourbon": 0}],
+      qType: 'multiple'
+    },
+    {
+      cType: 'bar',
+      question: 'What was your favorite company that came to hiring day?',
+      choices: [{ 'Dog Vacay': 0, 'Dollar Shave Club': 0, 'LA Body Points': 0, Whisper: 0, Procore: 0, ESPN: 0, Ticketmaster: 0 }],
+      qType: 'multiple'
+    },
+    { cType: 'pie',
+      question: 'Thumbs Up or Thumbs Down on drinks last Thursday?',
+      choices: [{ Up: 0, Down: 0 }],
+      qType: 'thumbs'
+    }
+  ]
 };
 
 //http is our server and therefore needs to be listening on a port

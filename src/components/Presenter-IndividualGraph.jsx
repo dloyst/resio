@@ -13,6 +13,8 @@ class IndividualGraph extends React.Component{
   render () {
 		var title = this.props.question;
 		var cType = this.props.cType;
+		var eachChoice = this.props.qChoices['0'];
+		var valueArray = [];
 
 		//'choices' will always be an array with one element that is an object of all choices
 		//that choices array has been passed down as a prop called qChoices
